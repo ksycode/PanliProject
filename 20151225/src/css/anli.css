@@ -1,0 +1,66 @@
+﻿    * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a, img {
+            border: 0;
+            text-decoration: none;
+        }
+        /* section */
+        .section {
+            width: 1070px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+            .section ul li {
+                float: left;
+                margin-right: 14px;
+                margin-bottom: 13px;
+                display: inline;
+                width: 200px;
+                height: 210px;
+                overflow: hidden;
+                position: relative;
+                margin-top: 47px;
+
+            }
+
+                .section ul li .photo {
+                    width: 200px;
+                    height: 210px;
+                    overflow: hidden;
+                }
+
+            .section .rsp {
+                width: 200px;
+                height: 210px;
+                overflow: hidden;
+                position: absolute;
+                background: #000;
+                top: 0px;
+                left: 0px;
+            }
+
+            .section .text {
+                position: absolute;
+                width: 200px;
+                height: 210px;
+                left: -200px;
+                top: 0px;
+                overflow: hidden;
+            }
+
+                .section .text h3 {
+                    width: 200px;
+                    margin-top: 160px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #000;
+                    background: #fff;
+                    font-family: "微软雅黑";
+                    font-size: 18px;
+                }

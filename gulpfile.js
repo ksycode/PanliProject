@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 
-var day = '20151026';
+var day = '20151228';
 
 // 引入组件
 var sass = require('gulp-sass'),
@@ -34,11 +34,11 @@ var reload      = browserSync.reload;
 //编译Sass，Autoprefix及缩小化
 gulp.task('sass', function() {
     return gulp.src('./'+ day +'/src/scss/main.scss')
-        .pipe(sass({ style: 'expanded' }))
-        .pipe(gulp.dest('./'+ day +'/dist/css'))
+        .pipe(sass())
+        .pipe(gulp.dest('./'+ day +'/build/css'))
         .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
-        .pipe(gulp.dest('./'+ day +'/css/'))
+        .pipe(gulp.dest('./'+ day +'/build/css/'))
         .pipe(reload({stream: true}))
         .pipe(notify({ message: 'Styles  task complete' }));
 
@@ -77,10 +77,10 @@ gulp.task('homeHtml',function(){
 gulp.task('scripts',function(){
     return gulp.src('./'+ day +'/src/js/*.js')
         .pipe(concat('main.js'))
-        .pipe(gulp.dest('./'+ day +'/js'))
+        .pipe(gulp.dest('./'+ day +'/build/js'))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
-        .pipe(gulp.dest('./'+ day +'/js/'))
+        .pipe(gulp.dest('./'+ day +'/build/js/'))
         .pipe(reload({stream: true}))
         .pipe(notify({ message: 'Scripts task complete' }));
 
