@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>6City全球购</title>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+  <script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="build/css/main.min.css" />
+  <script type="text/javascript">
+    (function() {
+      var fontsize = function() {
+        var W = document.body.getBoundingClientRect().width,
+          defaultW = 750,
+          defaultSize = 40;
+        if (W > defaultW) W = defaultW;
+        if (W < 320) W = 320;
+        window.W = W;
+        document.getElementsByTagName('html')[0].style.fontSize = (W / defaultW * defaultSize).toFixed(2) + 'px';
+      };
+      window.addEventListener('resize', function() {
+        setTimeout(fontsize, 300)
+      });
+      window.addEventListener("DOMContentLoaded", fontsize);
+      setTimeout(fontsize, 300);
+
+      var myScroll;
+
+      function loaded() {
+        myScroll = new iScroll('main');
+      }
+      document.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+      }, false);
+      document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(loaded, 200);
+      }, false);
+    })();
+
+  </script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="wrapper">
+      <section class="goods">
+        <div class="goodslist">
+          <a href="#" class="goodspic">
+            <img src="images/pic.jpg" alt="goodspic">
+          </a>
+          <div class="goodstext">
+            <p class="goodsname">Victoria's Secret Very Sexy Strappy V-string Panty</p>
+            <p class="merchant">RMB 1093.93</p>
+            <p class="shipmerment">$159.99</p>
+          </div>
+        </div>
+        <div class="goodcontent">
+          <p id="fe_text">https://piyishow.taobao.com/view_shop.htm?spm=a21bt.44796.146207.3.dEyVNZ&shop_id=59015491</p>
+        </div>
+        <div class="goodbtn">
+          <p><a href="" class="cal_btn btn" id="d_clip_button" data-clipboard-target="fe_text">复制链接</a></p>
+
+        </div>
+
+        <div class="ico">
+          <div id="triangle-down"></div>
+        </div>
+
+
+        <div class="goodbtn">
+          <p>复制链接后，打开6City APP 即可购买</p>
+        </div>
+
+      </section>
+      <footer class="footer">
+        <div class="footer_toolbar">
+          <a href="#" class="cal_btn calbtndisable">打开/下载APP</a>
+        </div>
+      </footer>
+
+    </div>
+
+
+  </div>
+  <script src="js/ZeroClipboard.min.js"></script>
+  <script type="text/javascript">
+      // 定义一个新的复制对象
+      var clip = new ZeroClipboard(document.getElementById("d_clip_button"), {
+          moviePath: "js/ZeroClipboard.swf"
+      });
+
+      // 复制内容到剪贴板成功后的操作
+      clip.on('complete', function (client, args) {
+          alert("复制成功，复制内容为：" + args.text);
+      });
+
+  </script>
+</body>
+
+</html>

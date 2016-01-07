@@ -1,0 +1,81 @@
+﻿$axure.loadCurrentPage({
+  "url":"包裹新增状态.html",
+  "generationDate":new Date(1450243501528.19),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"6de8a13b051d4c78a439918d5b5f2de0",
+    "type":"Axure:Page",
+    "name":"包裹新增状态",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"934b556c2d4f47febcc9df830bc389a1",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fontSize":"12px",
+            "horizontalAlignment":"left",
+            "fill":{
+              "fillType":"solid",
+              "color":0xFFC7EDCC},
+            "location":{
+              "x":20,
+              "y":430},
+            "size":{
+              "width":810,
+              "height":130}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"0add4fd043ae4c8ebdf8e0bcdfa04689",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontSize":"12px",
+                "horizontalAlignment":"left",
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFC7EDCC},
+                "location":{
+                  "x":20,
+                  "y":430},
+                "size":{
+                  "width":810,
+                  "height":130}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/包裹新增状态/u0.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "934b556c2d4f47febcc9df830bc389a1":{
+      "scriptId":"u0"},
+    "0add4fd043ae4c8ebdf8e0bcdfa04689":{
+      "scriptId":"u1"}}});

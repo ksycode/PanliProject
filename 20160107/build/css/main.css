@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0; }
+
+a {
+  text-decoration: none;
+  font-family: 'microsoft yahei';
+  font-size: 16px; }
+
+.main {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 2.5rem;
+  overflow: hidden; }
+
+.wrapper {
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transform: translate(0px, 0px) translateZ(0px);
+          transform: translate(0px, 0px) translateZ(0px); }
+
+.goods {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto; }
+
+.merchant,
+.shipmerment {
+  color: #323232;
+  font-weight: bold; }
+
+.goodslist {
+  border-bottom: solid 0.06rem #CCCCCC;
+  width: 100%;
+  display: table;
+  padding: 0.5rem; }
+  .goodslist .goodspic {
+    display: table-cell;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    border: solid 0.06rem #CCCCCC;
+    vertical-align: middle; }
+    .goodslist .goodspic img {
+      max-width: 100%;
+      max-height: 100%; }
+  .goodslist .goodsname {
+    font-size: 20px; }
+  .goodslist .goodstext {
+    display: table-cell;
+    padding-left: 0.5rem;
+    vertical-align: middle; }
+
+.goodcontent {
+  width: 95%;
+  height: 180px;
+  background: #f5f5f5;
+  margin: 10px auto;
+  color: #aab3c5;
+  text-align: left;
+  line-height: 30px;
+  overflow: hidden;
+  word-wrap: break-word; }
+  .goodcontent p {
+    padding: 0.375rem 0.25rem;
+    height: 100%;
+    font-size: 20px; }
+
+.goodbtn {
+  width: 100%;
+  margin-top: 0.5rem; }
+  .goodbtn p {
+    padding: 0.375rem 0.25rem;
+    text-align: center;
+    height: 100%;
+    font-family: 'microsoft yahei';
+    font-size: 16px; }
+  .goodbtn .btn {
+    background: #7d8aa4; }
+
+.ico {
+  height: 0.5rem;
+  width: 100%;
+  margin: 0 auto; }
+
+#triangle-down {
+  width: 0;
+  height: 0;
+  margin: 22px auto;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 13px solid #515152; }
+
+.footer {
+  clear: both;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  width: 100%; }
+  .footer .footer_toolbar {
+    padding: 0.375rem 0.25rem;
+    height: 100%; }
+
+.cal_btn {
+  display: block;
+  background: #FF4D6B;
+  border-radius: 0.125rem;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 200%;
+  color: #FFFFFF;
+  font-size: 0.8rem; }

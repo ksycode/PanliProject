@@ -1,18 +1,19 @@
 .content {
-  width: $width;
   min-height: 285px;
-  margin: 0 auto;
   overflow: hidden;
 
   font-family: "Microsoft YaHei";
   ul {
-    margin-top: 10px;
-    margin-left: -18px;
+
+    //margin-left: -19px;
+    width: 1222px;
+    clear: both;
+    overflow: hidden;
     li {
       float: left;
       list-style-type: none;
-      width: 224px;
-        height: 270px;
+      width: 225px;
+      height: 270px;
       overflow: hidden;
       div {
         overflow: hidden;
@@ -23,7 +24,7 @@
           transition: 1s;
           width: 224px;
           height: 224px;
-          
+
           &:hover {
             transform: scale(1.2);
           }
@@ -36,8 +37,8 @@
       }
     }
     li  {
-      margin-left: 19px;
-      margin-top: 30px;
+      margin-right: 19px;
+      margin-bottom: 30px;
     }
   }
 }

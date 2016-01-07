@@ -1,0 +1,65 @@
+﻿$axure.loadCurrentPage({
+  "url":"【优先级】.html",
+  "generationDate":new Date(1450243501390.18),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"e35f7d4913c247f286171ddb8e1356b5",
+    "type":"Axure:Page",
+    "name":"【优先级】",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"cccb55da431a450b9ee4845c8ac80c78",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "size":{
+              "width":922,
+              "height":253}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"bb5bf7afc005488ea6bd2c437e23afd4",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "size":{
+                  "width":922,
+                  "height":253}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/【优先级】/u0.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "cccb55da431a450b9ee4845c8ac80c78":{
+      "scriptId":"u0"},
+    "bb5bf7afc005488ea6bd2c437e23afd4":{
+      "scriptId":"u1"}}});

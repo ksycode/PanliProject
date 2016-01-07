@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>结算</title>
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="css/order.css"/>
+		<script type="text/javascript">
+			(function () {
+					var fontsize = function () {
+				    var W = document.body.getBoundingClientRect().width, defaultW = 750, defaultSize = 40;
+				    if (W > defaultW) W = defaultW;
+				    if (W < 320) W = 320;
+				    window.W = W; document.getElementsByTagName('html')[0].style.fontSize = (W / defaultW * defaultSize).toFixed(2) + 'px';
+				};
+				window.addEventListener('resize', function () { setTimeout(fontsize, 300) });
+				window.addEventListener("DOMContentLoaded", fontsize);
+				setTimeout(fontsize, 300);
+			})();
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<ul class="addressList">
+				<li>
+					<span>收件人:</span><span>艾阿碧</span>
+				</li>
+				<li>
+					<span>联系电话:</span><span>13812345678</span>
+				</li>
+				<li>
+					<span>身份证号:</span><span>3101**********1234</span>
+				</li>
+				<li>
+					<span>收货地址:</span><span>上海上海市普陀区祁连山南路2891弄100号盛源科技园A座4楼</span>
+				</li>
+				<li>
+					<span>邮政编号:</span><span>200331</span>
+				</li>
+			</ul>
+		</div>
+		<footer class="footer">
+			<p>商品费用 <span>RMB 1801.78</span> + 商家运费 <span>RMB 80.60</span> + 国际运费 (入仓后支付)</p>
+			<p>总计： <span>RMB1882.38</span></p>
+			<div class="footer_toolbar">
+				<a href="#" class="cal_btn">微信支付</a>
+			</div>
+		</footer>
+	</body>
+</html>

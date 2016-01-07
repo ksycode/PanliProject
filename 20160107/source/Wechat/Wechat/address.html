@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>收货地址管理</title>
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/address.css"/>
+		<script type="text/javascript">
+		    (function () {
+					var fontsize = function () {
+				    var W = document.body.getBoundingClientRect().width, defaultW = 750, defaultSize = 40;
+				    if (W > defaultW) W = defaultW;
+				    if (W < 320) W = 320;
+				    window.W = W; document.getElementsByTagName('html')[0].style.fontSize = (W / defaultW * defaultSize).toFixed(2) + 'px';
+				};
+				window.addEventListener('resize', function () { setTimeout(fontsize, 300) });
+				window.addEventListener("DOMContentLoaded", fontsize);
+				setTimeout(fontsize, 300);
+				
+				var myScroll;
+				function loaded() {
+					myScroll = new iScroll('main');
+				}
+				document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+				document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+			})();
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<section class="createForm">
+				<div class="row recipients">
+					<span class="rowleft">收件人</span>
+					<div class="rowright">
+						<input id="userName" placeholder="必填" type="text"/>
+						<p class="info">需与身份证上姓名一致，否则影响清关</p>
+					</div>
+				</div>
+				<div class="row">
+					<span class="rowleft">联系电话</span>
+					<div class="rowright">
+						<input id="contact" placeholder="必填" type="text" value="13812345678"/>
+					</div>
+				</div>
+				<div class="row" id="identity">
+					<h6>收件人身份证信息</h6>
+					<p class="identityinfo">所有身份信息将被严格保密，仅用于清关。上传清晰的身份证照片将有助于加速清关。</p>
+					<div class="card1">
+						<span class="rowleft">身份证号</span>
+						<div class="rowright">
+							<input id="identitytxt" placeholder="必填" type="text"/>
+						</div>
+					</div>
+					<div class="card2">
+						<span class="rowleft">证件照片</span>
+						<div class="rowright identitypic">
+							<p>
+								<span>
+									<img src="images/identitycard_01.jpg" alt="identity"/>
+									<input type="file" class="fileinput" name="fileinput" />
+								</span>
+								<span>正面</span>
+							</p>
+							<p>
+								<span>
+									<input type="file" class="fileinput" name="fileinput" />
+								</span>
+								<span>反面</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<span class="rowleft">所在区域</span>
+					<div class="rowright region">
+						<input id="regiontxt" placeholder="必填" type="text"/>
+					</div>
+				</div>
+				<div class="row">
+					<span class="rowleft">详细地址</span>
+					<div class="rowright">
+						<div class="textinput c_tx2 " contenteditable="true" id="content_content">祁连山南路2891弄100号盛鑫科技园A座4楼</div>
+						<div class="textinput c_tx3 hide" contenteditable="true" id="substitutor_content">必填</div>
+					</div>
+				</div>
+				<div class="row">
+					<span class="rowleft">邮政编码</span>
+					<div class="rowright">
+						<input id="contact" placeholder="必填" type="text" value="200331"/>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<div class="footer_toolbar">
+				<a href="#" class="cal_btn calbtndisable">完成</a>
+			</div>
+		</footer>
+		<div class="overlay">
+		</div>
+		<script type="text/javascript">
+		$(function(){
+				$(".c_tx3").focus(function(){
+					$(this).hide();
+					$(this).siblings(".c_tx2").show().focus();
+				});
+				$(".c_tx2").blur(function(){
+					if($(this).html() == ""){
+						$(this).hide();
+						$(this).siblings(".c_tx3").show();
+					}
+				});
+				$('input, textarea, button, a, select').off('touchstart mousedown').on('touchstart mousedown', function(e) {
+			        e.stopPropagation();
+			    });
+			})
+		</script>
+	</body>
+</html>

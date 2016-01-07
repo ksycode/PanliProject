@@ -1,0 +1,65 @@
+﻿$axure.loadCurrentPage({
+  "url":"对应的商品状态.html",
+  "generationDate":new Date(1450243500684.14),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"7c23de5a23b54597820a687b2984bb79",
+    "type":"Axure:Page",
+    "name":"对应的商品状态",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"57de1c956be54eed881bfd2c2e53326f",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "size":{
+              "width":975,
+              "height":731}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"5bf1033d33ef48c6aa74cd50b49a2af6",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "size":{
+                  "width":975,
+                  "height":731}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/对应的商品状态/u0.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "57de1c956be54eed881bfd2c2e53326f":{
+      "scriptId":"u0"},
+    "5bf1033d33ef48c6aa74cd50b49a2af6":{
+      "scriptId":"u1"}}});

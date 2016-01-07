@@ -13,7 +13,7 @@
        obj.empty();
        //上一页sdf
        if(args.current > 1){
-         obj.append('<a href="javascript:;" class="prevPage">上一页</a>');
+         obj.append('<a href="javascript:;" class="prevPage" style="width:55px;">上一页</a>');
        }else{
          obj.remove('.prevPage');
          obj.append('<span class="disabled"></span>');
@@ -49,11 +49,11 @@
        }
        //下一页
        if(args.current < args.pageCount){
-         obj.append('<a href="javascript:;" class="nextPage">下一页</a> 到第<input type="text" name="name" class="txtclass" value="7"> 页 <input type="button" class="btn" id="btnPage" name="name" value="Go">');
+         obj.append('<a href="javascript:;" class="nextPage" style="width:55px;">下一页</a> 到第<input type="text" name="name" class="txtclass" value=""> 页 <input type="button" class="btn" id="btnPage" name="name" value="Go">');
        }else{
 
          obj.remove('.nextPage');
-         obj.append('到第<input type="text" name="name" class="txtclass" value="7"> 页 <input type="button" class="btn" id="btnPage" name="name" value="Go">');
+         obj.append('到第<input type="text" name="name" class="txtclass" value=""> 页 <input type="button" class="btn" id="btnPage" name="name" value="Go">');
          $(".prevPage").css("margin-left","147px");
        }
      })();

@@ -1,0 +1,30 @@
+@charset "utf-8";*{margin:0;padding:0;outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0);box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}html{width:100%;height:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}table{border-collapse:collapse;border-spacing:0}li,ol,ul{list-style:none}em,i{font-style:normal}a,button,input,textarea{border:0;background:0 0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}img{border:0}img,input{vertical-align:middle}
+body{color:#333;font-family:HelveticaNeue,"Microsoft YaHei";background-color:#FFFFFF}a{color:#106fb3;text-decoration:none}a:hover{text-decoration:none}.clearfix:after{clear:both;height:0;overflow:hidden;display:block;visibility:hidden;content:"."}.hide{display:none;}
+
+#main{z-index: 1; position: absolute;top: 0;left: 0;width: 100%;bottom: 2.5rem;overflow: hidden;}
+.footer,.overlay{height: 2.5rem; z-index: 2; position: absolute;left: 0;bottom: 0;width: 100%; background: #000000;}
+.footer .footer_toolbar{padding: 0.375rem 0.25rem; height: 100%;}
+.footer .cal_btn{display: block; background: #FF4D6B; border-radius: 0.125rem;height: 100%; width: 100%;text-align: center; line-height:200%;color: #FFFFFF;font-size: 0.85rem;}
+.overlay{z-index: 3;background: rgba(0,0,0,0.5);display: none;}
+.createForm{min-width: 320px; max-width: 750px; margin: 0 auto;padding-bottom:1.25rem;}
+.createForm .row{border-bottom:solid 1px #CCCCCC;padding:0.75rem 0.5rem;display:-webkit-box;}
+.row .rowright{width: 77%;display: -webkit-box;overflow: hidden;position: relative;}
+.recipients .rowright{display: block;}
+.row .rowleft{-webkit-box-flex:1; display: block;font-size: 0.8rem;color: #666;line-height: 0.8rem;}
+.rowright input{width: 100%; border: none;display: block;font-size:0.8rem;color: #333333;line-height: 0.85rem;font-family:HelveticaNeue,"Microsoft YaHei";}
+input::-webkit-input-placeholder{color: #999999;}
+.rowright .info{font-size:0.65rem;color: #0079ff;line-height:0.8rem;margin-top: 0.25rem;}
+.createForm #identity{display: block;}
+#identity .card1, #identity .card2{display: -webkit-box;}
+.row h6{font-weight: normal;font-size:0.8rem;color: #333333;line-height: 0.8rem;}
+.row .identityinfo{font-size:0.65rem;color: #0079FF;line-height:0.9rem;margin-top: 0.5rem;}
+.row .card1{padding: 0.75rem 0;}
+.identitypic p{width: 5rem;text-align: center;margin-right:1rem;}
+.identitypic p span:first-child{width:5rem;height: 5rem;display: table-cell;vertical-align: middle;text-align: center;background:url(../images/img_addgrey.png) no-repeat center;background-size: 2rem 2rem;border: solid 1px #999999;position: relative;}
+.identitypic p .fileinput{vertical-align: middle;height: 5rem;cursor: pointer;opacity: 0;position: absolute;right: 0;top: 0;}
+.identitypic p img{max-width: 5rem;max-height: 5rem;}
+.rowright p span:last-child{font-size:0.65rem;color: #666666;line-height: 0.65rem;}
+.region::after{content: '';display: inline-block;width: 0.35rem;height: 0.35rem;position: absolute;right: 0.1rem;top: 24%;border-right: 0.06rem solid #999999;border-top: 0.06rem solid #999999;-webkit-transform: rotate(45deg);}
+.rowright .textinput{font-size: 0.8rem;outline:none;cursor: text;width: 100%;word-break:break-word;word-wrap: break-word;overflow: hidden;overflow-y: auto;}
+.rowright .c_tx2{color: #333;}
+.rowright .c_tx3{color: #999;}

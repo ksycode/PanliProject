@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>填写代购单</title>
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+		<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/product.css"/>
+		<script type="text/javascript">
+			(function () {
+					var fontsize = function () {
+				    var W = document.body.getBoundingClientRect().width, defaultW = 750, defaultSize = 40;
+				    if (W > defaultW) W = defaultW;
+				    if (W < 320) W = 320;
+				    window.W = W; document.getElementsByTagName('html')[0].style.fontSize = (W / defaultW * defaultSize).toFixed(2) + 'px';
+				};
+				window.addEventListener('resize', function () { setTimeout(fontsize, 300) });
+				window.addEventListener("DOMContentLoaded", fontsize);
+				setTimeout(fontsize, 300);
+				
+				var myScroll;
+				function loaded() {
+					myScroll = new iScroll('main');
+				}
+				document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+				document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+			})();
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<div class="wrapper">
+			<section class="goods">
+				<div class="goodslist">
+					<a href="#" class="goodspic">
+						<img src="images/pic.jpg" alt="goodspic"/>
+					</a>
+					<div class="goodstext">
+						<p class="goodsname">Victoria's Secret Very Sexy Strappy V-string Panty</p>
+						<p class="merchant">美国亚马逊</p>
+						<p class="shipmerment">第三方商家：MacMakeupDivas</p>
+					</div>
+				</div>
+				<div class="goods_P">
+					<p class="pricename">商品单价</p>
+					<div class="goodsprice">
+						<p class="priceRMB">RMB 139.51 - RMB 158.11</p>
+						<p class="pricedollar">$ 22.50 - $ 25.50</p>
+					</div>
+				</div>
+				<div class="goods_P">
+					<p class="pricename">商家运费</p>
+					<div class="goodsprice">
+						<p class="priceRMB">RMB 30.88</p>
+						<p class="pricedollar">$ 4.98</p>
+					</div>
+				</div>
+				<div class="goodsamount">
+					<p class="amounts">数量：<span class="purchasenum">1</span> 件 (库存<span class="storagenum">2</span>)</p>
+					<div class="modifyamount">
+						<i class="btnadd btnaddisable"></i>
+						<i class="btnminus btnminusdisable"></i>
+					</div>
+				</div>
+				<div class="goodssize">
+					<p class="sizetit">Size<span class="sizedetail">Asian M</span></p>
+					<ul>
+						<li>Small</li>
+						<li>Medium</li>
+						<li>Large</li>
+						<li>Asian L</li>
+						<li class="itemselected">Asian M</li>
+						<li>Asian S</li>
+					</ul>
+				</div>
+				<div class="goodssize">
+					<p class="sizetit">Color</p>
+					<ul>
+						<li>New Pink</li>
+						<li class="itemnone">New Black</li>
+						<li>Holiday Red</li>
+						<li>New Lake</li>
+						<li>New Leopard</li>
+						<li class="itemnone">Blackwhite</li>
+					</ul>
+				</div>
+			</section>
+			<section class="manualitems ">
+				<div class="productname">
+					<div class="textinput c_tx2 " contenteditable="true" id="content_content">Victoria's Secret Very Sexy Strappy V-string Panty</div>
+					<div class="textinput c_tx3 hide" contenteditable="true" id="substitutor_content">请填写商品名称</div>
+					<p class="domainame">www.amazon.com</p>
+				</div>
+				<div class="goods_P product_p">
+					<p class="pricename">商品单价</p>
+					<div class="goodsprice">
+						<input type="text" placeholder="输入商品单价" class="moneytxt" />
+						<p class="moneyunit">美元<span class="a"></span></p>
+					</div>
+				</div>
+				<div class="goods_P product_p">
+					<p class="pricename">商家运费</p>
+					<div class="goodsprice">
+						<input type="text" placeholder="输入商家运费" class="moneytxt" />
+						<p class="moneyunit">美元<span class="a"></span></p>
+					</div>
+				</div>
+				<div class="goodsamount">
+					<p class="amounts">数量：<span class="purchasenum">1</span> 件 (库存<span class="storagenum">2</span>)</p>
+					<div class="modifyamount">
+						<i class="btnadd btnaddisable"></i>
+						<i class="btnminus btnminusdisable"></i>
+					</div>
+				</div>
+				<div class="productname productstandard">
+					<p class="standard">商品规格</p>
+					<div class="textinput c_tx2 hide" contenteditable="true"></div>
+					<div class="textinput c_tx3 " contenteditable="true">颜色/尺码等</div>
+				</div>
+			</section>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer_toolbar">
+				<a href="#" class="cal_btn calbtndisable">前往结算</a>
+			</div>
+		</footer>
+		<div class="overlay">
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$(".c_tx3").focus(function(){
+					$(this).hide();
+					$(this).siblings(".c_tx2").show().focus();
+				});
+				$(".c_tx2").blur(function(){
+					if($(this).html() == ""){
+						$(this).hide();
+						$(this).siblings(".c_tx3").show();
+					}
+				});
+				$('input, textarea, button, a, select').off('touchstart mousedown').on('touchstart mousedown', function(e) {
+			        e.stopPropagation();
+			    });
+			})
+		</script>
+	</body>
+</html>
