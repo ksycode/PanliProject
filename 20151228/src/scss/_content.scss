@@ -45,6 +45,7 @@
     li  {
       margin-right: 19px;
       margin-bottom: 34px;
+<<<<<<< HEAD
       p{
         font-size: 14px;
         height: 20px;
@@ -57,3 +58,17 @@
     }
   }
 }
+=======
+    }
+  }
+}
+p{
+  font-size: 14px;
+  height: 20px;
+  overflow: hidden;
+}
+.red {
+  color: $color;
+  font-size: 19px;
+}
+>>>>>>> 7e11ecbf3564c004c22f3eb3c674720b8b1e6c19

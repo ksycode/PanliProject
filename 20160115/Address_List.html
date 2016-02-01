@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>添加地址</title>
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/Addlist.css"/>
+		<script type="text/javascript">
+		    (function () {
+					var fontsize = function () {
+				    var W = document.body.getBoundingClientRect().width, defaultW = 750, defaultSize = 40;
+				    if (W > defaultW) W = defaultW;
+				    if (W < 320) W = 320;
+				    window.W = W; document.getElementsByTagName('html')[0].style.fontSize = (W / defaultW * defaultSize).toFixed(2) + 'px';
+				};
+				window.addEventListener('resize', function () { setTimeout(fontsize, 300) });
+				window.addEventListener("DOMContentLoaded", fontsize);
+				setTimeout(fontsize, 300);
+
+				var myScroll;
+				function loaded() {
+					myScroll = new iScroll('main');
+				}
+				document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+				document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+			})();
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<section class="createForm">
+
+    		<div class="row ">
+           <ul class="row-u">
+            <li class=" region">
+              <a href="Address.html">
+                <p class="row_Name"> 王建 ，15233992588 <span class="sp_M">默认地址</span></p>
+                <p>上海 上海市 普陀区</p>
+                <p>祁连山南路2891弄100号盛鑫科技园A座4楼祁连山南路2891弄100号盛鑫科技园A座4楼</p>
+                <p>身份证照片已上传（3101**********1234）</p>
+                </a>
+            </li>
+            <li class=" region">
+                <p class="row_Name"> 王建 ，15233992588</p>
+                <p>上海 上海市 普陀区</p>
+                <p>祁连山南路2891弄100号盛鑫科技园A座4楼祁连山南路2891弄100号盛鑫科技园A座4楼</p>
+                <p>身份证照片已上传（3101**********1234）</p>
+            </li>
+            <li class=" region">
+                <p class="row_Name"> 王建 ，15233992588 </p>
+                <p>上海 上海市 普陀区</p>
+                <p>祁连山南路2891弄100号盛鑫科技园A座4楼祁连山南路2891弄100号盛鑫科技园A座4楼</p>
+                <p>身份证照片已上传（3101**********1234）</p>
+            </li>
+            <li class=" region">
+                <p class="row_Name"> 王建 ，15233992588 </p>
+                <p>上海 上海市 普陀区</p>
+                <p>祁连山南路2891弄100号盛鑫科技园A座4楼祁连山南路2891弄100号盛鑫科技园A座4楼</p>
+                <p>身份证照片已上传（3101**********1234）</p>
+            </li>
+            <li class=" region">
+                <p class="row_Name"> 王建 ，15233992588</p>
+                <p>上海 上海市 普陀区</p>
+                <p>祁连山南路2891弄100号盛鑫科技园A座4楼祁连山南路2891弄100号盛鑫科技园A座4楼</p>
+                <p>身份证照片已上传（3101**********1234）</p>
+            </li>
+
+          </ul>
+
+				</div>
+
+    	</section>
+		</div>
+		<footer class="footer">
+			<div class="footer_toolbar">
+				<a href="#" class="cal_btn calbtndisable">添加新地址</a>
+			</div>
+		</footer>
+		<div class="overlay">
+		</div>
+
+	</body>
+</html>

@@ -1,10 +1,22 @@
 $width: 1200px;
 $color: #ff6e6e;
+<<<<<<< HEAD
 
 .banner-wrap {
   padding-bottom: 19px;
   .banner {
     overflow: hidden; 
+=======
+* {
+  margin: 0;
+  padding: 0;
+}
+.banner-wrap {
+  padding-bottom: 19px;
+  .banner {
+    overflow: hidden;
+    height: 370px;
+>>>>>>> 7e11ecbf3564c004c22f3eb3c674720b8b1e6c19
     img{
       max-width: 100%;
       max-height: 100%;

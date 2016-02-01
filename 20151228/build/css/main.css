@@ -1,7 +1,19 @@
+<<<<<<< HEAD
 .banner-wrap {
   padding-bottom: 19px; }
   .banner-wrap .banner {
     overflow: hidden; }
+=======
+* {
+  margin: 0;
+  padding: 0; }
+
+.banner-wrap {
+  padding-bottom: 19px; }
+  .banner-wrap .banner {
+    overflow: hidden;
+    height: 370px; }
+>>>>>>> 7e11ecbf3564c004c22f3eb3c674720b8b1e6c19
     .banner-wrap .banner img {
       max-width: 100%;
       max-height: 100%; }
@@ -42,6 +54,7 @@
     .content ul li {
       margin-right: 19px;
       margin-bottom: 34px; }
+<<<<<<< HEAD
       .content ul li p {
         font-size: 14px;
         height: 20px;
@@ -49,6 +62,17 @@
       .content ul li .red {
         color: #ff6e6e;
         font-size: 19px; }
+=======
+
+p {
+  font-size: 14px;
+  height: 20px;
+  overflow: hidden; }
+
+.red {
+  color: #ff6e6e;
+  font-size: 19px; }
+>>>>>>> 7e11ecbf3564c004c22f3eb3c674720b8b1e6c19
 
 a {
   text-decoration: none; }
