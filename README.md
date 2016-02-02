@@ -12,3 +12,6 @@
 4. 20160118-下拉刷新，上拉加载
 	- [地址列表](http://ksycode.github.io/PanliProject/20160118/Address_List.html)
 
+5. 2016春节不打烊手机活动页
+  - [活动地址](http://ksycode.github.io/PanliProject/20160125H5/index.html)
+
