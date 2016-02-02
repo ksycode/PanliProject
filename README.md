@@ -14,4 +14,6 @@
 
 5. 2016春节不打烊手机活动页
   - [活动地址](http://ksycode.github.io/PanliProject/20160125H5/index.html)
+6. 2016春节不打烊PC活动页
+  - [活动地址](http://ksycode.github.io/PanliProject/20160125/index.html)
 

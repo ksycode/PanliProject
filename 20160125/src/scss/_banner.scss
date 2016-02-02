@@ -1,7 +1,80 @@
+h6 {
+   margin: 0;
+   padding: 0;
+   font-family: "Microsoft YaHei";
+}
+
 .app-main {
     width: 100%;
-    min-width: 1200px;
-    background: url(../images/banner.jpg) top center no-repeat #cf1918;
+    min-width: 1000px;
+    background: url(./images/banner.png) top center no-repeat #cf1918;
     min-height: 900px;
     padding-bottom: 48px;
+
+
+    .banner_top{
+      height: 762px;
+        margin-bottom: 30px;
+    }
+    .specialTime{
+      width: 1000px;
+      height: 308px;
+      margin: 0 auto;
+      background: url(./images/time.png) top center no-repeat;
+        margin-bottom: 30px;
+        position: relative;
+        .registered-btn{
+          position: absolute;
+          width: 98px;
+          height: 79px;
+          top: 62px;
+          right: 63px;
+        }
+        .liaojie_mian
+        {
+          position: absolute;
+          width: 91px;
+          height: 30px;
+          top: 169px;
+          right: 183px;
+
+        }
+        .liaojie_jian{
+          position: absolute;
+          width: 91px;
+          height: 30px;
+          top: 199px;
+         right: 355px;
+
+
+        }
+        .liaojie_bi{
+          position: absolute;
+          width: 91px;
+          height: 30px;
+          bottom: 48px;
+          right: 62px;
+
+        }
+    }
+    .daigou{
+
+            width: 1000px;
+            height: 106px;
+            margin: 0 auto;
+            background: url(./images/title1.png) top center no-repeat;
+            margin-bottom: 10px;
+              }
+
+
+    .mianFee{
+      width: 1020px;
+      height: 330px;
+      margin: 0 auto 30px;
+      li{
+        float: left;
+        margin-left: 12px;
+      }
+
+    }
 }
